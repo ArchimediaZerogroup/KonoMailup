@@ -3,10 +3,10 @@ module KonoMailup
 
     def create
 
-      KonoMpCfg.token=request.env['omniauth.auth'][:credentials][:token]
-      KonoMpCfg.refresh_token=request.env['omniauth.auth'][:credentials][:refresh_token]
-      KonoMpCfg.expires_at=request.env['omniauth.auth'][:credentials][:expires_at]
-      KonoMpCfg.expires=request.env['omniauth.auth'][:credentials][:expires]
+      Cfg.token=request.env['omniauth.auth'][:credentials][:token]
+      Cfg.refresh_token=request.env['omniauth.auth'][:credentials][:refresh_token]
+      Cfg.expires_at=request.env['omniauth.auth'][:credentials][:expires_at]
+      Cfg.expires=request.env['omniauth.auth'][:credentials][:expires]
 
       redirect_to root_path, notice: 'Successfully token configuration'
 

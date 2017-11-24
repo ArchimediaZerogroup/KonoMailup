@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20171124085054) do
+ActiveRecord::Schema.define(version: 20171124094841) do
 
   create_table "settings", force: :cascade do |t|
     t.string   "var",                   null: false
