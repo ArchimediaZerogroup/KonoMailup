@@ -1,3 +1,4 @@
+require 'multi_json'
 module KonoMailup
   ##
   # Classe che si occupa restituire il client di mailup configurato
@@ -7,8 +8,12 @@ module KonoMailup
     attr_accessor :original_api
 
     def self.client_ready?
-      #TODO completare
+      #TODO could be made better?
+      self.new
       true
+    rescue Exception => e
+      Rails.logger.warn { "MailupClient not responding, #{e.message}" }
+      false
     end
 
     def initialize(debug: false)
@@ -41,7 +46,6 @@ module KonoMailup
         end
       end
     end
-
 
 
     def self.save_tokens(token:, refresh_token:, expires_at:, expires: true)
