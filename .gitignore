@@ -37,3 +37,5 @@ bower.json
 \.versions\.conf
 
 spec/dummy/config/secrets\.yml
+
+kono_mailup-*.gem
