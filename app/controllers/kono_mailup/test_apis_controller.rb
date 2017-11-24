@@ -11,7 +11,7 @@ module KonoMailup
 
     private
     def load_client
-      @client = KonoMailup::ApiBuilder.client
+      @client = KonoMailup::API.new
     end
 
   end

@@ -14,7 +14,7 @@
 <%= link_to 'Get Tokens', '/auth/mailup' %>
 
 
-<% if KonoMailup::ApiBuilder.client_ready? %>
+<% if KonoMailup::API.client_ready? %>
     <div>
       <h3>Test Api</h3>
       <%= link_to "Get List", list_test_api_path %>

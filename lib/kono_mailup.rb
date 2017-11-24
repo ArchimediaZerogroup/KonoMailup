@@ -5,7 +5,7 @@ module KonoMailup
   extend ActiveSupport::Autoload
 
   autoload :Engine
-  autoload :ApiBuilder
+  autoload :API
 
   eager_autoload do
 
