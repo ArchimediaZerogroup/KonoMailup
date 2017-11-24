@@ -25,6 +25,8 @@ Gem::Specification.new do |s|
 
 
   s.add_dependency "rails", "~> 4.2.10"
+  s.add_dependency 'mailup', '~> 1.2'
+  s.add_dependency 'omniauth-mailup'
 
   s.add_development_dependency "sqlite3"
 
