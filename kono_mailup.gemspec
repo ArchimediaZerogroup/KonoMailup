@@ -26,10 +26,10 @@ Gem::Specification.new do |s|
 
   s.add_dependency "rails", "~> 4.2.10"
   s.add_dependency 'mailup', '~> 1.2'
-  s.add_dependency 'omniauth-mailup'
+  s.add_dependency 'omniauth-mailup' , '~> 0.0.5'
+  s.add_dependency 'rails-settings-cached', '~> 0.6.6'
 
   s.add_development_dependency "sqlite3"
-
   s.add_development_dependency 'rspec-rails', '~> 3.0'
   s.add_development_dependency 'factory_girl_rails', '~> 4.5'
 
