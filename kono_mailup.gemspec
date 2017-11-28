@@ -16,10 +16,14 @@ Gem::Specification.new do |s|
                     gems for autentication/authorization and api connector"
   s.license = "MIT"
 
-
   files = `git ls-files -z`.split("\x0")
 
-  s.files = files.grep(%r{^(app|config|db|lib)/}) + %w(MIT-LICENSE Rakefile README.rdoc)
+  s.files = Dir["{app,config,db,lib}/**/*",
+                "vendor/mailup-ruby/{lib,rails}/**/*",
+                "vendor/omniauth-mailup/lib/**/*",
+                "MIT-LICENSE",
+                "Rakefile",
+                "README.md"]
 
   s.test_files = files.grep(%r{^(spec)/})
 

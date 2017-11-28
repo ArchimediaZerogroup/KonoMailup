@@ -10,7 +10,7 @@ with mailup gems for autentication/authorization and api connector
 
 Add To your Gemfile
 
-     gem 'kono_mailup', '~> 0.0.1'
+     gem 'kono_mailup'
      
 OR Install directly
 
@@ -21,4 +21,4 @@ Then in your rail application folder
      bin/rails g kono_mailup:install
      bin/rake kono_mailup:install:migrations
      
-Remember to configure the file created in the initilizers     
+Remember to configure the file created in the initializers     
