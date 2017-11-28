@@ -24,8 +24,21 @@ Gem::Specification.new do |s|
   s.test_files = files.grep(%r{^(spec)/})
 
   s.add_runtime_dependency 'rails'
-  s.add_runtime_dependency 'mailup', ['~> 1.2']
-  s.add_runtime_dependency 'omniauth-mailup', ['~> 0.0.5']
+
+  # Temporaly Dependency Downloaded in Vendor, waiting that it will be upgraded
+  # s.add_runtime_dependency 'mailup', ['~> 1.2']
+  #
+  # dependency for vendored mailup, remove after using directly the gem
+  s.add_runtime_dependency 'oauth2', '~> 1.0'
+
+  # Temporaly Dependency Downloaded in Vendor, waiting that it will be upgraded
+  # s.add_runtime_dependency 'omniauth-mailup', ['~> 0.0.5']
+  #
+  # dependency for vendored omniauth-mailup, remove after using directly the gem
+  s.add_runtime_dependency 'omniauth-oauth2', '~> 1.3.0'
+  s.add_runtime_dependency 'multi_json', '~> 1.10'
+
+
   s.add_runtime_dependency 'rails-settings-cached', ['~> 0.6.6']
 
   s.add_development_dependency "sqlite3"

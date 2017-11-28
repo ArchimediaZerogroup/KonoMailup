@@ -1,3 +1,7 @@
+#Remove this after using correct gems
+$:.unshift  File.expand_path("../../../vendor/omniauth-mailup/lib",__FILE__)
+$:.unshift  File.expand_path("../../../vendor/mailup-ruby/lib",__FILE__)
+
 module KonoMailup
   class Engine < ::Rails::Engine
     isolate_namespace KonoMailup

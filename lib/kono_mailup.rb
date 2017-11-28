@@ -25,7 +25,7 @@ module KonoMailup
   ##
   # Controller from where the engine inherit
   mattr_accessor :base_controller
-  @@base_controller = Proc.new { ApplicationController }
+  @@base_controller = Proc.new { ::ApplicationController }
 
 
   # Default way to setup KonoMailup. Run "rails generate kono_mailup_install" to create
