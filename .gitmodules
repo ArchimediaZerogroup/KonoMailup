@@ -1,0 +1,6 @@
+[submodule "vendor/omniauth-mailup"]
+	path = vendor/omniauth-mailup
+	url = https://github.com/berk/omniauth-mailup
+[submodule "vendor/mailup-ruby"]
+	path = vendor/mailup-ruby
+	url = https://github.com/Privy/mailup-ruby.git
