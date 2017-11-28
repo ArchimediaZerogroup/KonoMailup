@@ -1,10 +1,10 @@
 PATH
   remote: .
   specs:
-    kono_mailup (0.0.1)
+    kono_mailup (0.0.2)
       mailup (~> 1.2)
       omniauth-mailup (~> 0.0.5)
-      rails (~> 4.2.10)
+      rails
       rails-settings-cached (~> 0.6.6)
 
 GEM

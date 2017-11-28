@@ -5,16 +5,16 @@ require "kono_mailup/version"
 
 # Describe your gem and declare its dependencies:
 Gem::Specification.new do |s|
-  s.name        = "kono_mailup"
-  s.version     = KonoMailup::VERSION
-  s.authors     = ["Marino Bonetti"]
-  s.email       = ["marinobonetti@gmail.com"]
-  s.homepage    = "https://github.com/ArchimediaZerogroup/KonoMailup"
-  s.summary     = "Mailup Layer"
+  s.name = "kono_mailup"
+  s.version = KonoMailup::VERSION
+  s.authors = ["Marino Bonetti"]
+  s.email = ["marinobonetti@gmail.com"]
+  s.homepage = "https://github.com/ArchimediaZerogroup/KonoMailup"
+  s.summary = "Mailup Layer"
   s.description = "KonoMailup is a Mailup layer for rails applications that
                     provides configuration and saving of user tokens; with mailup
                     gems for autentication/authorization and api connector"
-  s.license     = "MIT"
+  s.license = "MIT"
 
 
   files = `git ls-files -z`.split("\x0")
@@ -23,11 +23,10 @@ Gem::Specification.new do |s|
 
   s.test_files = files.grep(%r{^(spec)/})
 
-
-  s.add_dependency "rails", "~> 4.2.10"
-  s.add_dependency 'mailup', '~> 1.2'
-  s.add_dependency 'omniauth-mailup' , '~> 0.0.5'
-  s.add_dependency 'rails-settings-cached', '~> 0.6.6'
+  s.add_runtime_dependency 'rails'
+  s.add_runtime_dependency 'mailup', ['~> 1.2']
+  s.add_runtime_dependency 'omniauth-mailup', ['~> 0.0.5']
+  s.add_runtime_dependency 'rails-settings-cached', ['~> 0.6.6']
 
   s.add_development_dependency "sqlite3"
   s.add_development_dependency 'rspec-rails', '~> 3.0'
